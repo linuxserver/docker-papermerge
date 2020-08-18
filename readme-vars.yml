@@ -1,0 +1,43 @@
+---
+
+# project information
+project_name: papermerge
+project_url: "https://www.papermerge.com/"
+project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png"
+project_blurb: |
+  [{{ project_name|capitalize }}]({{ project_url }}) is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. Instead of having piles of paper documents all over your desk, office or drawers - you can quickly scan them and configure your scanner to directly upload to Papermerge DMS."
+
+project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
+  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
+
+# container parameters
+common_param_env_vars_enabled: true
+param_container_name: "{{ project_name }}"
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "</path/to/appdata/config>", desc: "Contains all relevant configuration files." }
+  - { vol_path: "/data", vol_host_path: "</path/to/appdata/data>", desc: "Storage location for all papermerge data files." }
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "8000", internal_port: "8000", port_desc: "http gui" }
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "TZ", env_value: "America/New_York", desc: "Specify a timezone to use EG America/New_York"}
+
+# optional parameters
+optional_block_1: false
+optional_block_1_items: ""
+
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  Default login is admin:admin via the webui, accessible at http://SERVERIP:PORT
+  More info at [papermerge]({{ project_url }}).
+# changelog
+changelogs:
+  - { date: "08.08.20:", desc: "Initial Release." }
