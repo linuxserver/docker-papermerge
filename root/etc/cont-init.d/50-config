@@ -1,0 +1,44 @@
+#!/usr/bin/with-contenv bash
+
+export DJANGO_SETTINGS_MODULE=config.settings.production
+
+mkdir -p /data/{media,queue,static}
+
+if [ ! -f "/config/settings.py" ]; then
+	cp /defaults/settings.py /config/settings.py
+fi
+
+if [ ! -f "/config/papermerge.conf.py" ]; then
+	cp /defaults/papermerge.conf.py /config/papermerge.conf.py
+fi
+
+ln -sf /config/settings.py /app/papermerge/config/settings/production.py
+ln -sf /config/papermerge.conf.py /app/papermerge/papermerge.conf.py
+
+cd /app/papermerge
+python3 ./manage.py makemigrations
+python3 ./manage.py migrate
+
+python3 ./manage.py collectstatic --no-input
+python3 ./manage.py check
+
+mv /defaults/uwsgi.ini /app/papermerge > /dev/null
+
+# permissions
+chown -R abc:abc \
+	/app/papermerge \
+	/config \
+	/data
+
+cat << EOF | s6-setuidgid abc python3 /app/papermerge/manage.py shell
+from django.contrib.auth import get_user_model
+
+# see ref. below
+UserModel = get_user_model()
+
+if not UserModel.objects.filter(username='admin').exists():
+    user = UserModel.objects.create_user('admin', password='admin')
+    user.is_superuser = True
+    user.is_staff = True
+    user.save()
+EOF
