@@ -15,6 +15,8 @@ ARG BUILD_PACKAGES="\
 	apache2-dev \
 	build-essential \
 	git \
+	libxml2-dev \
+	libxslt-dev \
 	locales \
 	python3-dev"
 
