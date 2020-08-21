@@ -31,6 +31,7 @@ ARG RUNTIME_PACKAGES="\
 	python3 \
 	python3-cryptography \
 	python3-distutils \
+	python3-setuptools \
 	tesseract-ocr \
 	tesseract-ocr-eng \
 	uwsgi \
