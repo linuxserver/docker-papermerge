@@ -18,7 +18,8 @@ ARG BUILD_PACKAGES="\
 	libxml2-dev \
 	libxslt-dev \
 	locales \
-	python3-dev"
+	python3-dev \
+	python3-pip"
 
 # packages as variables
 ARG RUNTIME_PACKAGES="\
@@ -26,7 +27,8 @@ ARG RUNTIME_PACKAGES="\
 	pdftk-java \
 	poppler-utils \
 	python3 \
-	python3-pip \
+	python3-cryptography \
+	python3-distutils \
 	tesseract-ocr \
 	tesseract-ocr-eng \
 	uwsgi \
