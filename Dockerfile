@@ -16,6 +16,7 @@ ARG BUILD_PACKAGES="\
 	build-essential \
 	git \
 	libffi-dev \
+	libpq-dev \
 	libxml2-dev \
 	libxslt-dev \
 	locales \
