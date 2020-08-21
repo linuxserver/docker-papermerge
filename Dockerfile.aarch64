@@ -15,6 +15,7 @@ ARG BUILD_PACKAGES="\
 	apache2-dev \
 	build-essential \
 	git \
+	libffi-dev \
 	libxml2-dev \
 	libxslt-dev \
 	locales \
