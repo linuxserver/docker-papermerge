@@ -1,7 +1,7 @@
 adduser3.118ubuntu2
 apt-utils2.0.2ubuntu0.1
 apt2.0.2ubuntu0.1
-base-files11ubuntu5.1
+base-files11ubuntu5.2
 base-passwd3.5.47
 bash5.0-6ubuntu1.1
 bsdmainutils11.1.2ubuntu3
@@ -93,7 +93,7 @@ libgcrypt201.8.5-5ubuntu1
 libgif75.1.9-1
 libglib2.0-02.64.3-1~ubuntu20.04.1
 libgmp102:6.2.0+dfsg-4
-libgnutls303.6.13-2ubuntu1.2
+libgnutls303.6.13-2ubuntu1.3
 libgomp110-20200411-0ubuntu1
 libgpg-error01.37-1
 libgraphite2-31.3.13-11build1
@@ -141,10 +141,10 @@ libnspr42:4.25-1
 libnss32:3.49.1-1ubuntu1.5
 libopenjp2-72.3.1-1ubuntu4
 libp11-kit00.23.20-1build1
-libpam-modules-bin1.3.1-5ubuntu4
-libpam-modules1.3.1-5ubuntu4
-libpam-runtime1.3.1-5ubuntu4
-libpam0g1.3.1-5ubuntu4
+libpam-modules-bin1.3.1-5ubuntu4.1
+libpam-modules1.3.1-5ubuntu4.1
+libpam-runtime1.3.1-5ubuntu4.1
+libpam0g1.3.1-5ubuntu4.1
 libpango-1.0-01.44.7-2ubuntu4
 libpangocairo-1.0-01.44.7-2ubuntu4
 libpangoft2-1.0-01.44.7-2ubuntu4
