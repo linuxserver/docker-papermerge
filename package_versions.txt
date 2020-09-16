@@ -188,7 +188,7 @@ libtiff54.1.0+git191117-2build1
 libtinfo66.2-0ubuntu2
 libudev1245.4-4ubuntu3.2
 libunistring20.9.10-2
-libuuid12.34-0.1ubuntu9
+libuuid12.34-0.1ubuntu9.1
 libwebp60.6.1-2
 libwebpmux30.6.1-2
 libwind0-heimdal7.7.0+dfsg-1ubuntu1
