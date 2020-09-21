@@ -5,7 +5,7 @@ base-files11ubuntu5.2
 base-passwd3.5.47
 bash5.0-6ubuntu1.1
 bsdmainutils11.1.2ubuntu3
-bsdutils1:2.34-0.1ubuntu9
+bsdutils1:2.34-0.1ubuntu9.1
 bzip21.0.8-2
 ca-certificates-java20190405ubuntu1
 ca-certificates20190110ubuntu1.1
@@ -19,7 +19,7 @@ diffutils1:3.7-3
 dirmngr2.2.19-3ubuntu2
 dpkg1.19.7ubuntu3
 e2fsprogs1.45.5-2ubuntu1
-fdisk2.34-0.1ubuntu9
+fdisk2.34-0.1ubuntu9.1
 file1:5.38-4
 findutils4.7.0-1ubuntu1
 fontconfig-config2.13.1-2ubuntu3
@@ -61,7 +61,7 @@ libavahi-client30.7-4ubuntu7
 libavahi-common-data0.7-4ubuntu7
 libavahi-common30.7-4ubuntu7
 libbcprov-java1.61-1
-libblkid12.34-0.1ubuntu9
+libblkid12.34-0.1ubuntu9.1
 libbrotli11.0.7-6build1
 libbsd00.10.0-1
 libbz2-1.01.0.8-2
@@ -82,7 +82,7 @@ libdbus-1-31.12.16-2ubuntu2.1
 libdebconfclient00.251ubuntu1
 libexpat12.2.9-1build1
 libext2fs21.45.5-2ubuntu1
-libfdisk12.34-0.1ubuntu9
+libfdisk12.34-0.1ubuntu9.1
 libffi73.3-4
 libfftw3-double33.3.8-2ubuntu1
 libfontconfig12.13.1-2ubuntu3
@@ -129,7 +129,7 @@ libmagic-mgc1:5.38-4
 libmagic11:5.38-4
 libmagickcore-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11
 libmagickwand-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11
-libmount12.34-0.1ubuntu9
+libmount12.34-0.1ubuntu9.1
 libmpdec22.4.2-3
 libncurses66.2-0ubuntu2
 libncursesw66.2-0ubuntu2
@@ -172,7 +172,7 @@ libselinux13.0-1build2
 libsemanage-common3.0-1build2
 libsemanage13.0-1build2
 libsepol13.0-1
-libsmartcols12.34-0.1ubuntu9
+libsmartcols12.34-0.1ubuntu9.1
 libsodium231.0.18-1
 libsqlite3-03.31.1-4ubuntu0.2
 libss21.45.5-2ubuntu1
@@ -212,7 +212,7 @@ logsave1.45.5-2ubuntu1
 lsb-base11.1.0ubuntu2
 mawk1.3.4.20200120-2
 mime-support3.64ubuntu1
-mount2.34-0.1ubuntu9
+mount2.34-0.1ubuntu9.1
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
 openjdk-11-jre-headless11.0.8+10-0ubuntu1~20.04
@@ -246,7 +246,7 @@ tesseract-ocr4.1.1-2build2
 tzdata2020a-0ubuntu0.20.04
 ubuntu-keyring2020.02.11.2
 ucf3.0038+nmu1
-util-linux2.34-0.1ubuntu9
+util-linux2.34-0.1ubuntu9.1
 uwsgi-core2.0.18-11ubuntu1
 uwsgi-plugin-python32.0.18-11ubuntu1
 uwsgi2.0.18-11ubuntu1
