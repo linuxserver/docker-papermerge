@@ -62,9 +62,9 @@ RUN \
 	/app/papermerge/ --strip-components=1 && \
  echo "**** install pip packages ****" && \
  cd /app/papermerge && \
- shopt -s globstar && \
- for f in ./requirements/**/*; do pip3 install -r $f; done && \
- shopt -u globstar && \
+ bash -c 'shopt -s globstar' && \
+ bash -c 'for f in ./requirements/**/*; do pip3 install -r $f; done' && \
+ bash -c 'shopt -u globstar' && \
  echo "**** cleanup ****" && \
  apt-get purge -y --auto-remove \
 	$BUILD_PACKAGES && \
