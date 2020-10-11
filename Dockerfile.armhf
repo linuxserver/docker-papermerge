@@ -39,7 +39,7 @@ ARG RUNTIME_PACKAGES="\
 	uwsgi-plugin-python3"
 
 RUN \
- apt update && \
+ apt-get update && \
  echo "**** install build packages ****" && \
  apt-get install -y \
  	--no-install-recommends \
@@ -62,9 +62,9 @@ RUN \
 	/app/papermerge/ --strip-components=1 && \
  echo "**** install pip packages ****" && \
  cd /app/papermerge && \
- bash -c 'shopt -s globstar' && \
- bash -c 'for f in ./requirements/**/*; do pip3 install -r $f; done' && \
- bash -c 'shopt -u globstar' && \
+ /bin/bash -c 'shopt -s globstar && \
+    for f in ./requirements/**/*; do pip3 install -r $f; done && \
+    shopt -u globstar' && \
  echo "**** cleanup ****" && \
  apt-get purge -y --auto-remove \
 	$BUILD_PACKAGES && \
