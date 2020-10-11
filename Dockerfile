@@ -17,6 +17,7 @@ ARG BUILD_PACKAGES="\
 	git \
 	libffi-dev \
 	libpq-dev \
+	libmariadbclient-dev \
 	libxml2-dev \
 	libxslt-dev \
 	locales \
@@ -61,10 +62,7 @@ RUN \
 	/app/papermerge/ --strip-components=1 && \
  echo "**** install pip packages ****" && \
  cd /app/papermerge && \
- pip3 install -r requirements/base.txt && \
- pip3 install -r requirements/production.txt && \
- pip3 install -r requirements/extra/mysql.txt && \
- pip3 install -r requirements/extra/pg.txt && \
+ for f in ./requirements/**/*; do pip3 install -r $f; done && \
  echo "**** cleanup ****" && \
  apt-get purge -y --auto-remove \
 	$BUILD_PACKAGES && \
