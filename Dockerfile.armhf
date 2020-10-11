@@ -64,7 +64,8 @@ RUN \
  cd /app/papermerge && \
  pip3 install -r requirements/base.txt && \
  pip3 install -r requirements/production.txt && \
- pip3 install -r requirements/extra.txt && \
+ pip3 install -r requirements/extra/mysql.txt && \
+ pip3 install -r requirements/extra/pg.txt && \
  echo "**** cleanup ****" && \
  apt-get purge -y --auto-remove \
 	$BUILD_PACKAGES && \
