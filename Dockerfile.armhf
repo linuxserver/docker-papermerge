@@ -64,6 +64,7 @@ RUN \
  cd /app/papermerge && \
  shopt -s globstar && \
  for f in ./requirements/**/*; do pip3 install -r $f; done && \
+ shopt -u globstar && \
  echo "**** cleanup ****" && \
  apt-get purge -y --auto-remove \
 	$BUILD_PACKAGES && \
