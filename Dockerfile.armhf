@@ -27,6 +27,7 @@ ARG BUILD_PACKAGES="\
 # packages as variables
 ARG RUNTIME_PACKAGES="\
 	imagemagick \
+	libxslt1.1 \
 	pdftk-java \
 	poppler-utils \
 	python3 \
