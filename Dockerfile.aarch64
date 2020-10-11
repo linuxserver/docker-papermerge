@@ -27,6 +27,7 @@ ARG BUILD_PACKAGES="\
 # packages as variables
 ARG RUNTIME_PACKAGES="\
 	imagemagick \
+	libxslt1.1 \
 	pdftk-java \
 	poppler-utils \
 	python3 \
@@ -39,7 +40,7 @@ ARG RUNTIME_PACKAGES="\
 	uwsgi-plugin-python3"
 
 RUN \
- apt update && \
+ apt-get update && \
  echo "**** install build packages ****" && \
  apt-get install -y \
  	--no-install-recommends \
@@ -62,7 +63,9 @@ RUN \
 	/app/papermerge/ --strip-components=1 && \
  echo "**** install pip packages ****" && \
  cd /app/papermerge && \
- for f in ./requirements/**/*; do pip3 install -r $f; done && \
+ /bin/bash -c 'shopt -s globstar && \
+    for f in ./requirements/**/*; do pip3 install -r $f; done && \
+    shopt -u globstar' && \
  echo "**** cleanup ****" && \
  apt-get purge -y --auto-remove \
 	$BUILD_PACKAGES && \
