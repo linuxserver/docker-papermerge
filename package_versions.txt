@@ -86,7 +86,7 @@ libfdisk12.34-0.1ubuntu9.1
 libffi73.3-4
 libfftw3-double33.3.8-2ubuntu1
 libfontconfig12.13.1-2ubuntu3
-libfreetype62.10.1-2
+libfreetype62.10.1-2ubuntu0.1
 libfribidi01.0.8-2
 libgcc-s110.2.0-5ubuntu1~20.04
 libgcrypt201.8.5-5ubuntu1
@@ -220,7 +220,7 @@ openjdk-11-jre-headless11.0.8+10-0ubuntu1~20.04
 openssl1.1.1f-1ubuntu2
 passwd1:4.8.1-1ubuntu5.20.04
 pdftk-java3.0.9-1
-perl-base5.30.0-9build1
+perl-base5.30.0-9ubuntu0.2
 pinentry-curses1.1.0-3build1
 poppler-utils0.86.1-0ubuntu1
 procps2:3.3.16-1ubuntu2
