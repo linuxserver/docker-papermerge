@@ -8,7 +8,7 @@ bsdmainutils11.1.2ubuntu3
 bsdutils1:2.34-0.1ubuntu9.1
 bzip21.0.8-2
 ca-certificates-java20190405ubuntu1
-ca-certificates20190110ubuntu1.1
+ca-certificates20201027ubuntu0.20.04.1
 coreutils8.30-3ubuntu2
 curl7.68.0-1ubuntu2.2
 dash0.5.10.2-6
@@ -216,7 +216,7 @@ mime-support3.64ubuntu1
 mount2.34-0.1ubuntu9.1
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
-openjdk-11-jre-headless11.0.8+10-0ubuntu1~20.04
+openjdk-11-jre-headless11.0.9+11-0ubuntu1~20.04
 openssl1.1.1f-1ubuntu2
 passwd1:4.8.1-1ubuntu5.20.04
 pdftk-java3.0.9-1
@@ -244,7 +244,7 @@ tar1.30+dfsg-7
 tesseract-ocr-eng1:4.00~git30-7274cfa-1
 tesseract-ocr-osd1:4.00~git30-7274cfa-1
 tesseract-ocr4.1.1-2build2
-tzdata2020a-0ubuntu0.20.04
+tzdata2020d-0ubuntu0.20.04
 ubuntu-keyring2020.02.11.2
 ucf3.0038+nmu1
 util-linux2.34-0.1ubuntu9.1
