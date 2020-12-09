@@ -223,4 +223,5 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **09.12.20:** - Fix locales.
 * **08.08.20:** - Initial Release.
