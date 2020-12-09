@@ -40,4 +40,5 @@ app_setup_block: |
   More info at [papermerge]({{ project_url }}).
 # changelog
 changelogs:
+  - { date: "09.12.20:", desc: "Fix locales." }
   - { date: "08.08.20:", desc: "Initial Release." }
