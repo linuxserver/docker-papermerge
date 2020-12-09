@@ -20,7 +20,6 @@ ARG BUILD_PACKAGES="\
 	libmariadbclient-dev \
 	libxml2-dev \
 	libxslt-dev \
-	locales \
 	python3-dev \
 	python3-pip"
 
