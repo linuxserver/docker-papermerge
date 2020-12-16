@@ -40,9 +40,9 @@ grep3.4-1
 gzip1.10-0ubuntu4
 hicolor-icon-theme0.17-2
 hostname3.23
-imagemagick-6-common8:6.9.10.23+dfsg-2.1ubuntu11.1
-imagemagick-6.q168:6.9.10.23+dfsg-2.1ubuntu11.1
-imagemagick8:6.9.10.23+dfsg-2.1ubuntu11.1
+imagemagick-6-common8:6.9.10.23+dfsg-2.1ubuntu11.2
+imagemagick-6.q168:6.9.10.23+dfsg-2.1ubuntu11.2
+imagemagick8:6.9.10.23+dfsg-2.1ubuntu11.2
 init-system-helpers1.57
 java-common0.72
 krb5-locales1.17-6ubuntu4.1
@@ -126,8 +126,8 @@ libltdl72.4.6-14
 liblz4-11.9.2-2
 liblzma55.2.4-1ubuntu1
 libmagic11:5.38-4
-libmagickcore-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.1
-libmagickwand-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.1
+libmagickcore-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.2
+libmagickwand-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.2
 libmagic-mgc1:5.38-4
 libmount12.34-0.1ubuntu9.1
 libmpdec22.4.2-3
