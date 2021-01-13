@@ -24,6 +24,17 @@ INSTALLED_APPS.extend(
 #     },
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'dbname',
+#         'USER': 'dbuser',
+#         'PASSWORD': 'dbpass',
+#         'HOST': 'db',
+#         'PORT': 3306,
+#     },
+# }
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
