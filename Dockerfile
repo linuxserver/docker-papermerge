@@ -26,8 +26,8 @@ ARG BUILD_PACKAGES="\
 # packages as variables
 ARG RUNTIME_PACKAGES="\
 	imagemagick \
-	libmariadbd-dev \
-	libpq-dev \
+	libmariadb3 \
+	libpq5 \
 	libxslt1.1 \
 	pdftk-java \
 	poppler-utils \
