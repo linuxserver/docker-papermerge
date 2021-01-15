@@ -245,7 +245,7 @@ tar1.30+dfsg-7
 tesseract-ocr4.1.1-2build2
 tesseract-ocr-eng1:4.00~git30-7274cfa-1
 tesseract-ocr-osd1:4.00~git30-7274cfa-1
-tzdata2020d-0ubuntu0.20.04
+tzdata2020f-0ubuntu0.20.04.1
 ubuntu-keyring2020.02.11.2
 ucf3.0038+nmu1
 util-linux2.34-0.1ubuntu9.1
