@@ -28,6 +28,8 @@ param_ports:
 param_usage_include_env: true
 param_env_vars:
   - { env_var: "TZ", env_value: "America/New_York", desc: "Specify a timezone to use EG America/New_York"}
+opt_param_usage_include_env: true
+opt_param_env_vars:
   - { env_var: "REDIS_URL", env_value: "papermerge-redis", desc: "Specify an exteral redis instance to use. Can include a port and/or db."}
 
 # optional parameters
