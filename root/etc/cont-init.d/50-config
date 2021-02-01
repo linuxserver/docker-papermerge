@@ -2,9 +2,12 @@
 
 export DJANGO_SETTINGS_MODULE=config.settings.production
 
-# remove services unless they're enabled
+# configure redis options
 if [[ -v "$REDIS_URL" ]]; then
     rm -rf /etc/services.d/redis
+    printf '%s\n' '' 'CELERY_BROKER_URL = "redis://$REDIS_URL"' 'CELERY_BROKER_TRANSPORT_OPTIONS = {}' 'CELERY_RESULT_BACKEND = "redis://$REDIS_URL/0"' >> /defaults/settings.py
+else
+    printf '%s\n' '' 'CELERY_BROKER_URL = "redis://localhost"' 'CELERY_BROKER_TRANSPORT_OPTIONS = {}' 'CELERY_RESULT_BACKEND = "redis://localhost/0"' >> /defaults/settings.py
 fi
 
 mkdir -p /data/{media,queue,static}
