@@ -30,7 +30,7 @@ param_env_vars:
   - { env_var: "TZ", env_value: "America/New_York", desc: "Specify a timezone to use EG America/New_York"}
 opt_param_usage_include_env: true
 opt_param_env_vars:
-  - { env_var: "REDIS_URL", env_value: "papermerge-redis", desc: "Specify an exteral redis instance to use. Can include a port and/or db. If changed after initial setup also will require manual modification of /config/settings.py"}
+  - { env_var: "REDIS_URL", env_value: "papermerge-redis", desc: "Specify an exteral redis instance to use. Can include a port and/or db. If changed after initial setup will also require manual modification of /config/settings.py"}
 
 # optional parameters
 optional_block_1: false
