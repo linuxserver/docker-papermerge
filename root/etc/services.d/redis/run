@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+apt-get install -y \
+	redis
+
+mkdir -p /redis
+
+exec \
+	s6-setuidgid abc /usr/bin/redis-server /defaults/redis.conf
