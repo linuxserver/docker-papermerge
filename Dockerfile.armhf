@@ -26,12 +26,16 @@ ARG BUILD_PACKAGES="\
 # packages as variables
 ARG RUNTIME_PACKAGES="\
 	imagemagick \
+	libmariadb3 \
+	libpq5 \
 	libxslt1.1 \
 	pdftk-java \
 	poppler-utils \
 	python3 \
 	python3-cryptography \
 	python3-distutils \
+	python3-mysqldb \
+	python3-psycopg2 \
 	python3-setuptools \
 	redis \
 	tesseract-ocr \

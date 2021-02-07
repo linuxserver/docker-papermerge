@@ -43,6 +43,7 @@ app_setup_block: |
   More info at [papermerge]({{ project_url }}).
 # changelog
 changelogs:
-  - { date: "01.02.21:", desc: "Add redis." }  
+  - { date: "07.02.21:", desc: "Support external MySQL/PSQL DBs." }
+  - { date: "01.02.21:", desc: "Add redis." }
   - { date: "09.12.20:", desc: "Fix locales." }
   - { date: "08.08.20:", desc: "Initial Release." }
