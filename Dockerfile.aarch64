@@ -37,6 +37,7 @@ ARG RUNTIME_PACKAGES="\
 	python3-mysqldb \
 	python3-psycopg2 \
 	python3-setuptools \
+	redis \
 	tesseract-ocr \
 	tesseract-ocr-eng \
 	uwsgi \
@@ -74,7 +75,8 @@ RUN \
 	$BUILD_PACKAGES && \
  rm -rf \
 	/root/.cache \
-	/tmp/*
+	/tmp/* && \
+ apt-get clean -y
 
 # copy local files
 COPY root/ /

@@ -28,6 +28,9 @@ param_ports:
 param_usage_include_env: true
 param_env_vars:
   - { env_var: "TZ", env_value: "America/New_York", desc: "Specify a timezone to use EG America/New_York"}
+opt_param_usage_include_env: true
+opt_param_env_vars:
+  - { env_var: "REDIS_URL", env_value: "", desc: "Specify an external redis instance to use. Can optionally include a port (`redis:6379`) and/or db (`redis/foo`). If left blank or not included, will use a built-in redis instance. If changed after initial setup will also require manual modification of /config/settings.py"}
 
 # optional parameters
 optional_block_1: false
@@ -40,6 +43,7 @@ app_setup_block: |
   More info at [papermerge]({{ project_url }}).
 # changelog
 changelogs:
-  - { date: "13.01.21:", desc: "Support external MySQL/PSQL DBs." }
+  - { date: "07.02.21:", desc: "Support external MySQL/PSQL DBs." }
+  - { date: "01.02.21:", desc: "Add redis." }
   - { date: "09.12.20:", desc: "Fix locales." }
   - { date: "08.08.20:", desc: "Initial Release." }
