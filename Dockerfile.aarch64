@@ -15,11 +15,6 @@ ARG BUILD_PACKAGES="\
 	apache2-dev \
 	build-essential \
 	git \
-	libffi-dev \
-	libpq-dev \
-	libmariadbclient-dev \
-	libxml2-dev \
-	libxslt-dev \
 	python3-dev \
 	python3-pip"
 
@@ -27,15 +22,8 @@ ARG BUILD_PACKAGES="\
 ARG RUNTIME_PACKAGES="\
 	imagemagick \
 	libmariadb3 \
-	libpq5 \
-	libxslt1.1 \
-	pdftk-java \
 	poppler-utils \
 	python3 \
-	python3-cryptography \
-	python3-distutils \
-	python3-mysqldb \
-	python3-psycopg2 \
 	python3-setuptools \
 	redis \
 	tesseract-ocr \
