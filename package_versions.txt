@@ -164,9 +164,9 @@ libpoppler970.86.1-0ubuntu1
 libpq512.6-0ubuntu0.20.04.1
 libprocps82:3.3.16-1ubuntu2
 libpsl50.21.0-1ubuntu1
-libpython3.83.8.5-1~20.04
-libpython3.8-minimal3.8.5-1~20.04
-libpython3.8-stdlib3.8.5-1~20.04
+libpython3.83.8.5-1~20.04.2
+libpython3.8-minimal3.8.5-1~20.04.2
+libpython3.8-stdlib3.8.5-1~20.04.2
 libpython3-stdlib3.8.2-0ubuntu2
 libreadline88.0-4
 libroken18-heimdal7.7.0+dfsg-1ubuntu1
@@ -191,7 +191,7 @@ libtasn1-64.16.0-2
 libtesseract44.1.1-2build2
 libthai00.1.28-3
 libthai-data0.1.28-3
-libtiff54.1.0+git191117-2build1
+libtiff54.1.0+git191117-2ubuntu0.20.04.1
 libtinfo66.2-0ubuntu2
 libudev1245.4-4ubuntu3.4
 libunistring20.9.10-2
@@ -238,8 +238,8 @@ poppler-utils0.86.1-0ubuntu1
 procps2:3.3.16-1ubuntu2
 publicsuffix20200303.0012-1
 python33.8.2-0ubuntu2
-python3.83.8.5-1~20.04
-python3.8-minimal3.8.5-1~20.04
+python3.83.8.5-1~20.04.2
+python3.8-minimal3.8.5-1~20.04.2
 python3-cffi-backend1.14.0-1build1
 python3-cryptography2.8-3ubuntu0.1
 python3-distutils3.8.5-1~20.04.1
