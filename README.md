@@ -226,6 +226,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **25.02.21:** - Updated dependencies for v2
 * **07.02.21:** - Support external MySQL/PSQL DBs.
 * **01.02.21:** - Add redis.
 * **09.12.20:** - Fix locales.
