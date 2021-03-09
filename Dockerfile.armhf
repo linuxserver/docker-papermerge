@@ -11,6 +11,7 @@ LABEL maintainer="alex-phillips"
 ENV PYTHONUNBUFFERED 1
 ENV DJANGO_SETTINGS_MODULE config.settings.production
 
+# NOTE: the additional lib and python dependencies are for the ARM builds
 ARG BUILD_PACKAGES="\
 	apache2-dev \
 	build-essential \
@@ -29,7 +30,6 @@ ARG RUNTIME_PACKAGES="\
 	libmariadb3 \
 	libpq5 \
 	libxslt1.1 \
-	pdftk-java \
 	poppler-utils \
 	python3 \
 	python3-cryptography \
