@@ -67,6 +67,7 @@ RUN \
 	/app/papermerge/ --strip-components=1 && \
  echo "**** install pip packages ****" && \
  cd /app/papermerge && \
+ pip3 install django==3.1.7 && \
  /bin/bash -c 'shopt -s globstar && \
     for f in ./requirements/**/*; do pip3 install -r $f; done && \
     shopt -u globstar' && \
