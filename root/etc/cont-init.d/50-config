@@ -32,6 +32,10 @@ python3 ./manage.py check
 
 mv /defaults/uwsgi.ini /app/papermerge > /dev/null
 
+if ! grep -q BINARY_STAPLER /config/papermerge.conf.py; then
+    echo "BINARY_STAPLER = \"/usr/local/bin/stapler\"" >> /config/papermerge.conf.py
+fi
+
 # permissions
 chown -R abc:abc \
 	/app/papermerge \
