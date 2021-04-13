@@ -91,7 +91,7 @@ libhcrypto4-heimdal7.7.0+dfsg-1ubuntu1
 libheimbase1-heimdal7.7.0+dfsg-1ubuntu1
 libheimntlm0-heimdal7.7.0+dfsg-1ubuntu1
 libhiredis0.140.14.0-6
-libhogweed53.5.1+really3.5.1-2
+libhogweed53.5.1+really3.5.1-2ubuntu0.1
 libhx509-5-heimdal7.7.0+dfsg-1ubuntu1
 libicu6666.1-2ubuntu2
 libidn2-02.2.0-2
@@ -125,7 +125,7 @@ libmpdec22.4.2-3
 libmysqlclient218.0.23-0ubuntu0.20.04.1
 libncurses66.2-0ubuntu2
 libncursesw66.2-0ubuntu2
-libnettle73.5.1+really3.5.1-2
+libnettle73.5.1+really3.5.1-2ubuntu0.1
 libnghttp2-141.40.0-1build1
 libnorm11.5.8+dfsg2-2build1
 libnpth01.6-1
