@@ -43,6 +43,7 @@ app_setup_block: |
   More info at [papermerge]({{ project_url }}).
 # changelog
 changelogs:
+  - { date: "13.04.21:", desc: "Handle upstream stapler change" }
   - { date: "13.03.21:", desc: "Fixed mglib dependency per issue 32"}
   - { date: "25.02.21:", desc: "Updated dependencies for v2"}
   - { date: "07.02.21:", desc: "Support external MySQL/PSQL DBs." }

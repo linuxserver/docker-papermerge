@@ -9,6 +9,8 @@ STATIC_DIR = "/app/papermerge/static"
 MEDIA_URL = "/media/"
 STATIC_URL = "/static/"
 
+BINARY_STAPLER = "/usr/local/bin/stapler"
+
 OCR_DEFAULT_LANGUAGE = "eng"
 
 OCR_LANGUAGES = {
