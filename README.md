@@ -226,6 +226,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **13.04.21:** - Handle upstream stapler change
 * **13.03.21:** - Fixed mglib dependency per issue 32
 * **25.02.21:** - Updated dependencies for v2
 * **07.02.21:** - Support external MySQL/PSQL DBs.
