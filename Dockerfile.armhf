@@ -39,7 +39,7 @@ ARG RUNTIME_PACKAGES="\
 	python3-setuptools \
 	redis \
 	tesseract-ocr \
-	tesseract-ocr-eng \
+	tesseract-ocr-all \
 	uwsgi \
 	uwsgi-plugin-python3"
 
