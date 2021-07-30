@@ -9,7 +9,7 @@ bsdutils1:2.34-0.1ubuntu9.1
 bzip21.0.8-2
 ca-certificates20210119~20.04.1
 coreutils8.30-3ubuntu2
-curl7.68.0-1ubuntu2.5
+curl7.68.0-1ubuntu2.6
 dash0.5.10.2-6
 debconf1.5.73
 debianutils4.9.1
@@ -63,7 +63,7 @@ libcap-ng00.7.9-2.1build1
 libc-bin2.31-0ubuntu9.2
 libcom-err21.45.5-2ubuntu1
 libcrypt11:4.4.10-10ubuntu4
-libcurl47.68.0-1ubuntu2.5
+libcurl47.68.0-1ubuntu2.6
 libdatrie10.2.12-3
 libdb5.35.3.28+dfsg1-0.6ubuntu2
 libdebconfclient00.251ubuntu1
@@ -119,10 +119,10 @@ libmagic11:5.38-4
 libmagickcore-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.4
 libmagickwand-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.4
 libmagic-mgc1:5.38-4
-libmariadb31:10.3.29-0ubuntu0.20.04.1
+libmariadb31:10.3.30-0ubuntu0.20.04.1
 libmount12.34-0.1ubuntu9.1
 libmpdec22.4.2-3
-libmysqlclient218.0.25-0ubuntu0.20.04.1
+libmysqlclient218.0.26-0ubuntu0.20.04.2
 libncurses66.2-0ubuntu2
 libncursesw66.2-0ubuntu2
 libnettle73.5.1+really3.5.1-2ubuntu0.2
@@ -171,14 +171,14 @@ libss21.45.5-2ubuntu1
 libssh-40.9.3-2ubuntu2.1
 libssl1.11.1.1f-1ubuntu2.4
 libstdc++610.3.0-1ubuntu1~20.04
-libsystemd0245.4-4ubuntu3.7
+libsystemd0245.4-4ubuntu3.10
 libtasn1-64.16.0-2
 libtesseract44.1.1-2build2
 libthai00.1.28-3
 libthai-data0.1.28-3
 libtiff54.1.0+git191117-2ubuntu0.20.04.1
 libtinfo66.2-0ubuntu2
-libudev1245.4-4ubuntu3.7
+libudev1245.4-4ubuntu3.10
 libunistring20.9.10-2
 libuuid12.34-0.1ubuntu9.1
 libwebp60.6.1-2ubuntu0.20.04.1
@@ -204,7 +204,7 @@ logsave1.45.5-2ubuntu1
 lsb-base11.1.0ubuntu2
 lua-bitop1.0.2-5
 lua-cjson2.1.0+dfsg-2.1
-mariadb-common1:10.3.29-0ubuntu0.20.04.1
+mariadb-common1:10.3.30-0ubuntu0.20.04.1
 mawk1.3.4.20200120-2
 mime-support3.64ubuntu1
 mount2.34-0.1ubuntu9.1
