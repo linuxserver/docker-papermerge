@@ -119,7 +119,7 @@ libmagic11:5.38-4
 libmagickcore-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.4
 libmagickwand-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.4
 libmagic-mgc1:5.38-4
-libmariadb31:10.3.30-0ubuntu0.20.04.1
+libmariadb31:10.3.31-0ubuntu0.20.04.1
 libmount12.34-0.1ubuntu9.1
 libmpdec22.4.2-3
 libmysqlclient218.0.26-0ubuntu0.20.04.2
@@ -146,7 +146,7 @@ libpgm-5.2-05.2.122~dfsg-3ubuntu1
 libpixman-1-00.38.4-0ubuntu1
 libpng16-161.6.37-2
 libpoppler970.86.1-0ubuntu1
-libpq512.7-0ubuntu0.20.04.1
+libpq512.8-0ubuntu0.20.04.1
 libprocps82:3.3.16-1ubuntu2.2
 libpsl50.21.0-1ubuntu1
 libpython3.83.8.10-0ubuntu1~20.04
@@ -204,7 +204,7 @@ logsave1.45.5-2ubuntu1
 lsb-base11.1.0ubuntu2
 lua-bitop1.0.2-5
 lua-cjson2.1.0+dfsg-2.1
-mariadb-common1:10.3.30-0ubuntu0.20.04.1
+mariadb-common1:10.3.31-0ubuntu0.20.04.1
 mawk1.3.4.20200120-2
 mime-support3.64ubuntu1
 mount2.34-0.1ubuntu9.1
