@@ -41,6 +41,8 @@ app_setup_block_enabled: true
 app_setup_block: |
   Default login is admin:admin via the webui, accessible at http://SERVERIP:PORT
   More info at [papermerge]({{ project_url }}).
+  
+  If you need non-English OCR language support, you can use [this mod](https://github.com/linuxserver/docker-mods/tree/papermerge-multilangocr).
 # changelog
 changelogs:
   - { date: "13.04.21:", desc: "Handle upstream stapler change" }
