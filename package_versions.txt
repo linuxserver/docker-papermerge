@@ -93,7 +93,7 @@ libheimntlm0-heimdal7.7.0+dfsg-1ubuntu1
 libhiredis0.140.14.0-6
 libhogweed53.5.1+really3.5.1-2ubuntu0.2
 libhx509-5-heimdal7.7.0+dfsg-1ubuntu1
-libicu6666.1-2ubuntu2
+libicu6666.1-2ubuntu2.1
 libidn2-02.2.0-2
 libjansson42.12-1build1
 libjbig02.1-3.1build1
