@@ -5,7 +5,7 @@ base-files11ubuntu5.4
 base-passwd3.5.47
 bash5.0-6ubuntu1.1
 bsdmainutils11.1.2ubuntu3
-bsdutils1:2.34-0.1ubuntu9.1
+bsdutils1:2.34-0.1ubuntu9.3
 bzip21.0.8-2
 ca-certificates20210119~20.04.2
 coreutils8.30-3ubuntu2
@@ -17,7 +17,7 @@ diffutils1:3.7-3
 dirmngr2.2.19-3ubuntu2.1
 dpkg1.19.7ubuntu3
 e2fsprogs1.45.5-2ubuntu1
-fdisk2.34-0.1ubuntu9.1
+fdisk2.34-0.1ubuntu9.3
 file1:5.38-4
 findutils4.7.0-1ubuntu1
 fontconfig2.13.1-2ubuntu3
@@ -45,14 +45,14 @@ init-system-helpers1.57
 krb5-locales1.17-6ubuntu4.1
 libacl12.2.53-6
 libapt-pkg6.02.0.6
-libarchive133.4.0-2ubuntu1
+libarchive133.4.0-2ubuntu1.1
 libasn1-8-heimdal7.7.0+dfsg-1ubuntu1
 libassuan02.5.3-7ubuntu2
 libatomic110.3.0-1ubuntu1~20.04
 libattr11:2.4.48-5
 libaudit11:2.8.5-2ubuntu6
 libaudit-common1:2.8.5-2ubuntu6
-libblkid12.34-0.1ubuntu9.1
+libblkid12.34-0.1ubuntu9.3
 libbrotli11.0.7-6ubuntu0.1
 libbsd00.10.0-1
 libbz2-1.01.0.8-2
@@ -69,7 +69,7 @@ libdb5.35.3.28+dfsg1-0.6ubuntu2
 libdebconfclient00.251ubuntu1
 libexpat12.2.9-1build1
 libext2fs21.45.5-2ubuntu1
-libfdisk12.34-0.1ubuntu9.1
+libfdisk12.34-0.1ubuntu9.3
 libffi73.3-4
 libfftw3-double33.3.8-2ubuntu1
 libfontconfig12.13.1-2ubuntu3
@@ -120,7 +120,7 @@ libmagickcore-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.4
 libmagickwand-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.4
 libmagic-mgc1:5.38-4
 libmariadb31:10.3.32-0ubuntu0.20.04.1
-libmount12.34-0.1ubuntu9.1
+libmount12.34-0.1ubuntu9.3
 libmpdec22.4.2-3
 libmysqlclient218.0.28-0ubuntu0.20.04.3
 libncurses66.2-0ubuntu2
@@ -164,7 +164,7 @@ libselinux13.0-1build2
 libsemanage13.0-1build2
 libsemanage-common3.0-1build2
 libsepol13.0-1
-libsmartcols12.34-0.1ubuntu9.1
+libsmartcols12.34-0.1ubuntu9.3
 libsodium231.0.18-1
 libsqlite3-03.31.1-4ubuntu0.2
 libss21.45.5-2ubuntu1
@@ -207,7 +207,7 @@ lua-cjson2.1.0+dfsg-2.1
 mariadb-common1:10.3.32-0ubuntu0.20.04.1
 mawk1.3.4.20200120-2
 mime-support3.64ubuntu1
-mount2.34-0.1ubuntu9.1
+mount2.34-0.1ubuntu9.3
 mysql-common5.8+1.0.5ubuntu2
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
@@ -245,7 +245,7 @@ tesseract-ocr-osd1:4.00~git30-7274cfa-1
 tzdata2021e-0ubuntu0.20.04
 ubuntu-keyring2020.02.11.4
 ucf3.0038+nmu1
-util-linux2.34-0.1ubuntu9.1
+util-linux2.34-0.1ubuntu9.3
 uwsgi2.0.18-11ubuntu1
 uwsgi-core2.0.18-11ubuntu1
 uwsgi-plugin-python32.0.18-11ubuntu1
