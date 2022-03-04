@@ -56,7 +56,7 @@ libblkid12.34-0.1ubuntu9.3
 libbrotli11.0.7-6ubuntu0.1
 libbsd00.10.0-1
 libbz2-1.01.0.8-2
-libc62.31-0ubuntu9.2
+libc62.31-0ubuntu9.7
 libcairo21.16.0-4ubuntu1
 libcap21:2.32-1
 libcap-ng00.7.9-2.1build1
@@ -119,7 +119,7 @@ libmagic11:5.38-4
 libmagickcore-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.4
 libmagickwand-6.q16-68:6.9.10.23+dfsg-2.1ubuntu11.4
 libmagic-mgc1:5.38-4
-libmariadb31:10.3.32-0ubuntu0.20.04.1
+libmariadb31:10.3.34-0ubuntu0.20.04.1
 libmount12.34-0.1ubuntu9.3
 libmpdec22.4.2-3
 libmysqlclient218.0.28-0ubuntu0.20.04.3
@@ -156,9 +156,9 @@ libpython3-stdlib3.8.2-0ubuntu2
 libreadline88.0-4
 libroken18-heimdal7.7.0+dfsg-1ubuntu1
 librtmp12.4+20151223.gitfa8646d.1-2build1
-libsasl2-22.1.27+dfsg-2
-libsasl2-modules2.1.27+dfsg-2
-libsasl2-modules-db2.1.27+dfsg-2
+libsasl2-22.1.27+dfsg-2ubuntu0.1
+libsasl2-modules2.1.27+dfsg-2ubuntu0.1
+libsasl2-modules-db2.1.27+dfsg-2ubuntu0.1
 libseccomp22.5.1-1ubuntu1~20.04.2
 libselinux13.0-1build2
 libsemanage13.0-1build2
@@ -204,7 +204,7 @@ logsave1.45.5-2ubuntu1
 lsb-base11.1.0ubuntu2
 lua-bitop1.0.2-5
 lua-cjson2.1.0+dfsg-2.1
-mariadb-common1:10.3.32-0ubuntu0.20.04.1
+mariadb-common1:10.3.34-0ubuntu0.20.04.1
 mawk1.3.4.20200120-2
 mime-support3.64ubuntu1
 mount2.34-0.1ubuntu9.3
