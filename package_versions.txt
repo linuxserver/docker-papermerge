@@ -169,7 +169,7 @@ libsodium231.0.18-1
 libsqlite3-03.31.1-4ubuntu0.2
 libss21.45.5-2ubuntu1
 libssh-40.9.3-2ubuntu2.2
-libssl1.11.1.1f-1ubuntu2.11
+libssl1.11.1.1f-1ubuntu2.12
 libstdc++610.3.0-1ubuntu1~20.04
 libsystemd0245.4-4ubuntu3.15
 libtasn1-64.16.0-2
@@ -211,7 +211,7 @@ mount2.34-0.1ubuntu9.3
 mysql-common5.8+1.0.5ubuntu2
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
-openssl1.1.1f-1ubuntu2.11
+openssl1.1.1f-1ubuntu2.12
 passwd1:4.8.1-1ubuntu5.20.04.1
 perl-base5.30.0-9ubuntu0.2
 pinentry-curses1.1.0-3build1
@@ -238,7 +238,7 @@ redis-tools5:5.0.7-2ubuntu0.1
 sed4.7-1
 sensible-utils0.0.12+nmu1
 sysvinit-utils2.96-2.1ubuntu1
-tar1.30+dfsg-7ubuntu0.20.04.1
+tar1.30+dfsg-7ubuntu0.20.04.2
 tesseract-ocr4.1.1-2build2
 tesseract-ocr-eng1:4.00~git30-7274cfa-1
 tesseract-ocr-osd1:4.00~git30-7274cfa-1
