@@ -149,9 +149,9 @@ libpoppler970.86.1-0ubuntu1
 libpq512.9-0ubuntu0.20.04.1
 libprocps82:3.3.16-1ubuntu2.3
 libpsl50.21.0-1ubuntu1
-libpython3.83.8.10-0ubuntu1~20.04.2
-libpython3.8-minimal3.8.10-0ubuntu1~20.04.2
-libpython3.8-stdlib3.8.10-0ubuntu1~20.04.2
+libpython3.83.8.10-0ubuntu1~20.04.4
+libpython3.8-minimal3.8.10-0ubuntu1~20.04.4
+libpython3.8-stdlib3.8.10-0ubuntu1~20.04.4
 libpython3-stdlib3.8.2-0ubuntu2
 libreadline88.0-4
 libroken18-heimdal7.7.0+dfsg-1ubuntu1
@@ -219,8 +219,8 @@ poppler-utils0.86.1-0ubuntu1
 procps2:3.3.16-1ubuntu2.3
 publicsuffix20200303.0012-1
 python33.8.2-0ubuntu2
-python3.83.8.10-0ubuntu1~20.04.2
-python3.8-minimal3.8.10-0ubuntu1~20.04.2
+python3.83.8.10-0ubuntu1~20.04.4
+python3.8-minimal3.8.10-0ubuntu1~20.04.4
 python3-cffi-backend1.14.0-1build1
 python3-cryptography2.8-3ubuntu0.1
 python3-distutils3.8.10-0ubuntu1~20.04
@@ -242,7 +242,7 @@ tar1.30+dfsg-7ubuntu0.20.04.2
 tesseract-ocr4.1.1-2build2
 tesseract-ocr-eng1:4.00~git30-7274cfa-1
 tesseract-ocr-osd1:4.00~git30-7274cfa-1
-tzdata2021e-0ubuntu0.20.04
+tzdata2022a-0ubuntu0.20.04
 ubuntu-keyring2020.02.11.4
 ucf3.0038+nmu1
 util-linux2.34-0.1ubuntu9.3
@@ -250,4 +250,4 @@ uwsgi2.0.18-11ubuntu1
 uwsgi-core2.0.18-11ubuntu1
 uwsgi-plugin-python32.0.18-11ubuntu1
 xz-utils5.2.4-1ubuntu1
-zlib1g1:1.2.11.dfsg-2ubuntu1.2
+zlib1g1:1.2.11.dfsg-2ubuntu1.3
