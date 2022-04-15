@@ -45,7 +45,7 @@ init-system-helpers1.57
 krb5-locales1.17-6ubuntu4.1
 libacl12.2.53-6
 libapt-pkg6.02.0.6
-libarchive133.4.0-2ubuntu1.1
+libarchive133.4.0-2ubuntu1.2
 libasn1-8-heimdal7.7.0+dfsg-1ubuntu1
 libassuan02.5.3-7ubuntu2
 libatomic110.3.0-1ubuntu1~20.04
@@ -249,5 +249,5 @@ util-linux2.34-0.1ubuntu9.3
 uwsgi2.0.18-11ubuntu1
 uwsgi-core2.0.18-11ubuntu1
 uwsgi-plugin-python32.0.18-11ubuntu1
-xz-utils5.2.4-1ubuntu1
+xz-utils5.2.4-1ubuntu1.1
 zlib1g1:1.2.11.dfsg-2ubuntu1.3
