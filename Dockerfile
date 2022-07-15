@@ -10,6 +10,7 @@ LABEL maintainer="alex-phillips"
 # ensures our console output looks familiar and is not buffered by Docker
 ENV PYTHONUNBUFFERED 1
 ENV DJANGO_SETTINGS_MODULE config.settings.production
+ARG DEBIAN_FRONTEND="noninteractive"
 
 # NOTE: the additional lib and python dependencies are for the ARM builds
 ARG BUILD_PACKAGES="\
@@ -44,40 +45,41 @@ ARG RUNTIME_PACKAGES="\
 	uwsgi-plugin-python3"
 
 RUN \
- apt-get update && \
- echo "**** install build packages ****" && \
- apt-get install -y \
- 	--no-install-recommends \
-	$BUILD_PACKAGES && \
- echo "**** install runtime packages ****" && \
- apt-get install -y \
- 	--no-install-recommends \
-	$RUNTIME_PACKAGES && \
- echo "**** install papermerge ****" && \
- mkdir -p /app/papermerge && \
- if [ -z ${PAPERMERGE_RELEASE+x} ]; then \
-	PAPERMERGE_RELEASE=$(curl -sX GET "https://api.github.com/repos/ciur/papermerge/releases/latest" \
-	| awk '/tag_name/{print $4;exit}' FS='[""]'); \
- fi && \
- curl -o \
- 	/tmp/papermerge.tar.gz -L \
-	"https://github.com/ciur/papermerge/archive/${PAPERMERGE_RELEASE}.tar.gz" && \
- tar xf \
- 	/tmp/papermerge.tar.gz -C \
-	/app/papermerge/ --strip-components=1 && \
+  apt-get update && \
+  echo "**** install build packages ****" && \
+  apt-get install -y \
+    --no-install-recommends \
+    $BUILD_PACKAGES && \
+  echo "**** install runtime packages ****" && \
+  apt-get install -y \
+    --no-install-recommends \
+    $RUNTIME_PACKAGES && \
+  echo "**** install papermerge ****" && \
+  mkdir -p /app/papermerge && \
+  if [ -z ${PAPERMERGE_RELEASE+x} ]; then \
+    PAPERMERGE_RELEASE=$(curl -sX GET "https://api.github.com/repos/ciur/papermerge/releases/latest" \
+    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+  fi && \
+  curl -o \
+    /tmp/papermerge.tar.gz -L \
+    "https://github.com/ciur/papermerge/archive/${PAPERMERGE_RELEASE}.tar.gz" && \
+  tar xf \
+    /tmp/papermerge.tar.gz -C \
+    /app/papermerge/ --strip-components=1 && \
  echo "**** install pip packages ****" && \
- cd /app/papermerge && \
- pip3 install django==3.1.7 && \
- /bin/bash -c 'shopt -s globstar && \
-    for f in ./requirements/**/*; do pip3 install -r $f; done && \
-    shopt -u globstar' && \
- echo "**** cleanup ****" && \
- apt-get purge -y --auto-remove \
-	$BUILD_PACKAGES && \
- rm -rf \
-	/root/.cache \
-	/tmp/* && \
- apt-get clean -y
+  cd /app/papermerge && \
+  pip3 install --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ django==3.1.7 && \
+  pip3 install --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ -r ./requirements/base.txt && \
+  pip3 install --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ -r ./requirements/production.txt && \  
+  pip3 install --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ -r ./requirements/extra/mysql.txt && \  
+  pip3 install --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ -r ./requirements/extra/pg.txt && \      
+  echo "**** cleanup ****" && \
+  apt-get purge -y --auto-remove \
+    $BUILD_PACKAGES && \
+  rm -rf \
+    /root/.cache \
+    /tmp/* && \
+  apt-get clean -y
 
 # copy local files
 COPY root/ /
