@@ -45,6 +45,7 @@ app_setup_block: |
   If you need non-English OCR language support, you can use [this mod](https://github.com/linuxserver/docker-mods/tree/papermerge-multilangocr).
 # changelog
 changelogs:
+  - { date: "15.07.22:", desc: "Don't install development python packages" }
   - { date: "13.04.21:", desc: "Handle upstream stapler change" }
   - { date: "13.03.21:", desc: "Fixed mglib dependency per issue 32"}
   - { date: "25.02.21:", desc: "Updated dependencies for v2"}
