@@ -1,3 +1,11 @@
+# DEPRECATION NOTICE
+
+This image is deprecated. We will not offer support for this image and it will not be updated.
+The last working tag is:
+      v2.0.1-ls60
+We recommend the official image instead:
+https://hub.docker.com/r/papermerge/papermerge
+
 <!--- Provide a general summary of your changes in the Title above -->
 
 [linuxserverurl]: https://linuxserver.io

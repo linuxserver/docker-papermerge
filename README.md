@@ -27,6 +27,14 @@ Find us at:
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
 * [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
+# DEPRECATION NOTICE
+
+This image is deprecated. We will not offer support for this image and it will not be updated.
+The last working tag is:
+      v2.0.1-ls60
+We recommend the official image instead:
+https://hub.docker.com/r/papermerge/papermerge
+
 # [linuxserver/papermerge](https://github.com/linuxserver/docker-papermerge)
 
 [![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver%2Fpapermerge?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver%2Fpapermerge)
@@ -56,7 +64,7 @@ The architectures supported by this image are:
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
 | arm64 | ✅ | arm64v8-\<version tag\> |
-| armhf| ✅ | arm32v7-\<version tag\> |
+| armhf | ✅ | arm32v7-\<version tag\> |
 
 ## Application Setup
 
@@ -81,7 +89,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/New_York
+      - TZ=Etc/UTC
       - REDIS_URL= #optional
     volumes:
       - </path/to/appdata/config>:/config
@@ -98,13 +106,14 @@ docker run -d \
   --name=papermerge \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e TZ=America/New_York \
+  -e TZ=Etc/UTC \
   -e REDIS_URL= `#optional` \
   -p 8000:8000 \
   -v </path/to/appdata/config>:/config \
   -v </path/to/appdata/data>:/data \
   --restart unless-stopped \
   lscr.io/linuxserver/papermerge:latest
+
 ```
 
 ## Parameters
@@ -116,7 +125,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 8000` | http gui |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e TZ=America/New_York` | Specify a timezone to use EG America/New_York |
+| `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-e REDIS_URL=` | Specify an external redis instance to use. Can optionally include a port (`redis:6379`) and/or db (`redis/foo`). If left blank or not included, will use a built-in redis instance. If changed after initial setup will also require manual modification of /config/settings.py |
 | `-v /config` | Contains all relevant configuration files. |
 | `-v /data` | Storage location for all papermerge data files. |
@@ -230,6 +239,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **15.02.23:** - Deprecate image.
 * **15.07.22:** - Don't install development python packages
 * **13.04.21:** - Handle upstream stapler change
 * **13.03.21:** - Fixed mglib dependency per issue 32
