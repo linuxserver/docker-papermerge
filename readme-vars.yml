@@ -6,8 +6,14 @@ project_url: "https://www.papermerge.com/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png"
 project_blurb: |
   [{{ project_name|capitalize }}]({{ project_url }}) is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. Instead of having piles of paper documents all over your desk, office or drawers - you can quickly scan them and configure your scanner to directly upload to Papermerge DMS."
-
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+
+project_deprecation_status: true
+project_deprecation_message: |
+  The last working tag is:
+        v2.0.1-ls60
+  We recommend the official image instead:
+  https://hub.docker.com/r/papermerge/papermerge
 
 # supported architectures
 available_architectures:
@@ -43,8 +49,10 @@ app_setup_block: |
   More info at [papermerge]({{ project_url }}).
   
   If you need non-English OCR language support, you can use [this mod](https://github.com/linuxserver/docker-mods/tree/papermerge-multilangocr).
+
 # changelog
 changelogs:
+  - { date: "15.02.23:", desc: "Deprecate image." }
   - { date: "15.07.22:", desc: "Don't install development python packages" }
   - { date: "13.04.21:", desc: "Handle upstream stapler change" }
   - { date: "13.03.21:", desc: "Fixed mglib dependency per issue 32"}
